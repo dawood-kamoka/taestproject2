@@ -30,14 +30,15 @@ const Contact = () => {
           <StaggerContainer>
             <div className="space-y-6">
               {[
-                { icon: <Mail />, title: "Email Us", info: "hello@lumina.com", sub: "Response in 24h" },
+                { icon: <Mail />, title: "Email Us", info: "hello@dawood.com", sub: "Response in 24h" },
                 { icon: <Phone />, title: "Call Us", info: "+1 (555) 000-1234", sub: "Mon-Fri 9am-6pm" },
                 { icon: <MapPin />, title: "Visit Us", info: "123 Minimalism Way", sub: "Oslo, Norway" }
               ].map((item, i) => (
                 <ScrollReveal key={i}>
                   <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-xl shadow-gray-100/50 flex items-center gap-6">
                     <div className="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center">
-                      {React.cloneElement(item.icon as React.ReactElement, { size: 24 })}
+                      {/* Fixed: cast item.icon as React.ReactElement<any> to allow 'size' property in cloneElement */}
+                      {React.cloneElement(item.icon as React.ReactElement<any>, { size: 24 })}
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900">{item.title}</h4>
@@ -115,7 +116,7 @@ const Contact = () => {
               <div className="bg-white p-6 rounded-3xl shadow-2xl flex items-center gap-4">
                 <div className="w-12 h-12 bg-indigo-600 text-white rounded-2xl flex items-center justify-center"><MapPin /></div>
                 <div>
-                  <h4 className="font-bold">Lumina HQ</h4>
+                  <h4 className="font-bold">Dawood HQ</h4>
                   <p className="text-sm text-gray-500">Visit our design studio</p>
                 </div>
               </div>

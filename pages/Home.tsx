@@ -177,7 +177,7 @@ const Home = () => {
             <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-indigo-400/20 rounded-full blur-3xl" />
             
             <ScrollReveal>
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">Join the Lumina Club</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">Join the Dawood Club</h2>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <p className="text-indigo-100 text-lg mb-10 max-w-xl mx-auto">

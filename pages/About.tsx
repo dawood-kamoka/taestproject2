@@ -14,7 +14,7 @@ const About = () => {
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
-              We started Lumina because we couldn't find products that matched our standards for both quality and minimalist design. So, we decided to build them ourselves.
+              We started Dawood because we couldn't find products that matched our standards for both quality and minimalist design. So, we decided to build them ourselves.
             </p>
           </ScrollReveal>
         </div>
@@ -35,7 +35,7 @@ const About = () => {
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <p className="text-gray-500 leading-relaxed mb-6 text-lg">
-                Founded in 2020, Lumina began as a small studio in Oslo. Our mission was simple: eliminate the clutter from daily life by creating essentials that are as functional as they are beautiful.
+                Founded in 2020, Dawood began as a small studio in Oslo. Our mission was simple: eliminate the clutter from daily life by creating essentials that are as functional as they are beautiful.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
@@ -76,7 +76,8 @@ const About = () => {
                 <ScrollReveal key={i}>
                   <div className="bg-white p-10 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl transition-all h-full flex flex-col items-center text-center">
                     <div className="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
-                      {React.cloneElement(value.icon as React.ReactElement, { size: 32 })}
+                      {/* Fixed: cast value.icon as React.ReactElement<any> to allow 'size' property in cloneElement */}
+                      {React.cloneElement(value.icon as React.ReactElement<any>, { size: 32 })}
                     </div>
                     <h3 className="text-xl font-bold mb-4">{value.title}</h3>
                     <p className="text-gray-500 text-sm">{value.desc}</p>

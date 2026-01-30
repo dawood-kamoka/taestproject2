@@ -6,7 +6,7 @@ export const CATEGORIES = ['All', 'Electronics', 'Apparel', 'Home & Living', 'Ac
 export const PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'Lumina Air Pro Headphones',
+    name: 'Dawood Air Pro Headphones',
     price: 299.99,
     category: 'Electronics',
     image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800',
@@ -99,7 +99,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 1,
     name: 'Sarah Johnson',
     role: 'Product Designer',
-    content: 'The quality of Lumina products is absolutely unmatched. Every piece I ordered exceeded expectations.',
+    content: 'The quality of Dawood products is absolutely unmatched. Every piece I ordered exceeded expectations.',
     avatar: 'https://picsum.photos/seed/sarah/100/100'
   },
   {

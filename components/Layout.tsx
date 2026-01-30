@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold tracking-tight text-indigo-600">LUMINA</Link>
+        <Link to="/" className="text-2xl font-bold tracking-tight text-indigo-600 uppercase">DAWOOD</Link>
         
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
@@ -91,7 +91,7 @@ const Footer = () => (
   <footer className="bg-gray-50 border-t border-gray-200 pt-16 pb-8">
     <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
       <div>
-        <h3 className="text-xl font-bold mb-6 text-indigo-600 uppercase tracking-wider">Lumina</h3>
+        <h3 className="text-xl font-bold mb-6 text-indigo-600 uppercase tracking-wider">Dawood</h3>
         <p className="text-gray-500 leading-relaxed mb-6">
           Elevating your daily essentials through thoughtful design and uncompromising quality.
         </p>
@@ -133,7 +133,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="max-w-7xl mx-auto px-4 md:px-8 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-      <p>© 2024 Lumina. All rights reserved.</p>
+      <p>© 2024 Dawood. All rights reserved.</p>
       <div className="flex space-x-6 mt-4 md:mt-0">
         <a href="#" className="hover:text-indigo-600">Privacy Policy</a>
         <a href="#" className="hover:text-indigo-600">Terms of Service</a>
